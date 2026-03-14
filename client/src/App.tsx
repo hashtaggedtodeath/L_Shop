@@ -3,7 +3,7 @@ import { Header } from './components/Header';
 import { MainPage } from './pages/MainPage';
 import { LoginPage } from './pages/LoginPage';
 import { CartPage } from './pages/CartPage';
-import { DeliveryPage } from './pages/DeliveryPage'; 
+import { DeliveryPage } from './pages/DeliveryPage'; // <--- Импорт
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
 
@@ -17,7 +17,7 @@ function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/delivery" element={<DeliveryPage />} /> {}
+            <Route path="/delivery" element={<DeliveryPage />} /> {/* <--- Маршрут */}
           </Routes>
         </div>
       </CartProvider>
